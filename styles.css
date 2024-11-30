@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://i.pinimg.com/736x/d3/3d/e2/d33de20144a773e299b327d41f10f25d.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Transparent overlay */
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #ecf0f1;
+    flex: 1 0 100px;
+}
+
+.input-section input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    flex: 1 0 calc(30% - 15px);
+    transition: transform 0.2s;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.input-section button:hover {
+    background: linear-gradient(to right, #2ecc71, #3498db);
+    transform: scale(1.05);
+}
+
+/* Expenses list */
+.expenses-list {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ecf0f1;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background-color: rgba(52, 152, 219, 0.8);
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: rgba(236, 240, 241, 0.2);
+}
+
+.delete-btn {
+    padding: 6px 10px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Chart container */
+.chart-container {
+    margin-top: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
